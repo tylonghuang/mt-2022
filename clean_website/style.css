@@ -1,0 +1,19 @@
+/* Main body with background */
+body {
+    background-color: #ccfff5;
+    overflow-y: hidden !important;
+}
+
+/* Containers */
+#surveyContainer {
+    background-color: white;
+    margin: 0;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border: 3px solid green;
+    max-width: 550px;
+}

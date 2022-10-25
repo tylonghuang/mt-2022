@@ -4,14 +4,14 @@ Survey.StylesManager.applyTheme("modern");
 // Survey logic goes here
 var surveyJSON = {
     "title": "Online Clutter Experiment",
-    "description": "Participate at your own fun - Long Nguyen",
+    "description": "Participate at your own fun",
     "pages": [
         {
         "name": "page1",
         "elements": [
             {
             "type": "checkbox",
-            "name": "question3",
+            "name": "privacyQuestion",
             "title": "I have read the privacy statement linked above and agree to have my data processed in the scope of this study.",
             "isRequired": true,
             "choices": [
@@ -30,7 +30,7 @@ var surveyJSON = {
         "elements": [
             {
             "type": "rating",
-            "name": "question1",
+            "name": "scaleQuestion",
             "title": "On a scale of one to five, how likely are you going to help the dog?",
             "isRequired": true,
             "minRateDescription": "(Most unlikely)",
@@ -45,7 +45,7 @@ var surveyJSON = {
             "elements": [
             {
             "type": "checkbox",
-            "name": "question2",
+            "name": "checkboxQuestion",
             "title": "What do you like about dogs?",
             "isRequired": true,
             "choices": [
