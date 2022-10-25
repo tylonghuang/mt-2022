@@ -3,78 +3,91 @@
     <head>
         <!-- Required meta tags -->
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link href="https://unpkg.com/survey-jquery@1.9.51/modern.css" type="text/css" rel="stylesheet"/>
-        <title>Hello, world!</title>
+        <!-- Internal CSS -->
+        <link rel="stylesheet" href="style.css"/>
+        <!-- Optional JavaScript -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.6/dist/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/jquery"></script>
+        <script src="https://unpkg.com/survey-jquery@1.9.51/survey.jquery.min.js"></script>
+        <!-- Browser Title -->
+        <title>Survey Thingy</title>
     </head>
     <body>
-    
-    <div id="surveyContainer">
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/jquery"></script>
-    <script src="https://unpkg.com/survey-jquery@1.9.51/survey.jquery.min.js"></script>
-    
-    <script>
-        Survey.StylesManager.applyTheme("modern");
-
-        // Survey logic goes here
-        var surveyJSON = {
-            "title": "Wonderful Experiment",
-            "description": "Sick description",
-            "pages":[
-                {"name":"page1",
-                "elements":[
-                    {
-                        "type":"rating",
-                        "name":"rate",
-                        "title":"On a scale of one to five, how likely are you to recommend my article to a friend or colleague? *",
-                        "minRateDescription":"(Most unlikely)",
-                        "maxRateDescription":"(Most likely)"
-                    }
-                ],
-                    "title": "Experiment 1",
-                    "description": "Imagine you are in x situation. How would you rate following statements?"
-                }
-            ]
-        };
-
-        function sendDataToServer(survey, options) {
-            // 
-            options.showDataSaving();
-	        $.ajax({
-                url: 'https://script.google.com/macros/s/AKfycbw6bo0u1dU5cOYFaRjoMCBV7o2VqNzCGV-uQzetsmW5D0rMHL-jpE5C321OFoj8cRIs/exec',
-                type: 'post',
-                data: JSON.stringify(survey.data),
-                //We need tell web app that we use plain text.
-                headers: {
-                    "Content-Type": "text/plain"
-                },
-                processData: false,
-                complete: function(res, status) {
-                    if (status == 'success') {
-                        //Show that data was send successfully
-                        options.showDataSavingSuccess();
-                    } else {
-                        //Display retry button in case of error
-                        options.showDataSavingError();
-                    }
-                },
-	        });
-        }
-
-        var survey = new Survey.Model(surveyJSON);
-        $("#surveyContainer").Survey({
-            model: survey,
-            onComplete: sendDataToServer
-        });
-    </script>
+        <!-- GIF Part -->
+        <div>
+            <img id=ImSticky src="./img/running.gif" alt="StickyImage"">
+            <img id=OtherImage src="./img/clock.gif" alt="OtherImage">
+            <img id=DogImage src="./img/dog.gif" alt="DogImage">
+            <img id=NyanCat src="./img/nyan.gif" alt="NyanCat">
+            <img id=Welcome src="./img/welcome.gif" alt="Welcome">
+        </div>
+        <!-- Container Part -->
+        <div class="container-fluid" id="text">
+            <div class="row justify-content-between">
+                <div class="col-2" id="lorem_1">
+                    <h1><strong>Abendlied</strong></h1>
+                    <h6>Matthias Claudius</h6>
+                    <p>Der Mond ist aufgegangen Die goldnen Sternlein prangen Am Himmel hell und klar: Der Wald steht schwarz und schweiget, Und aus den Wiesen steiget Der weiße Nebel wunderbar.</p>
+                    <p>Wie ist die Welt so stille, Und in der Dämmrung Hülle So traulich und so hold! Als eine stille Kammer, Wo ihr des Tages Jammer Verschlafen und vergessen sollt.</p>
+                    <p>Seht ihr den Mond dort stehen? Er ist nur halb zu sehen, Und ist doch rund und schön. So sind wohl manche Sachen, Die wir getrost belachen, Weil unsre Augen sie nicht sehn.</p>
+                    <p>Wir stolze Menschenkinder Sind eitel arme Sünder, Und wissen gar nicht viel; Wir spinnen Luftgespinste, Und suchen viele Künste, Und kommen weiter von dem Ziel.</p>
+                </div>
+                <div class="col-8 border border-warning" id="test">
+                    <div class="row">
+                        <div class="col-3" id="idk">
+                            <div class="list-group">
+                                <a href="#" class="list-group-item list-group-item-action list-group-item-danger active">You cannot click me</a>
+                                <a href="#" class="list-group-item list-group-item-action list-group-item-warning">You have been warned</a>
+                                <a href="#" class="list-group-item list-group-item-action list-group-item-warning active">Third time's the charm</a>
+                                <a href="#" class="list-group-item list-group-item-action list-group-item-success active">Surely this time, right</a>
+                                <a href="#" class="list-group-item list-group-item-action list-group-item-primary">What are you doing here</a>
+                                <a href="#" class="list-group-item list-group-item-action list-group-item-info active">There's nothing to see</a>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            Don't mind me, I'm just some very nice text doing no harm ( ͡° ͜ʖ ͡°)
+                        </div>
+                        <div class="col-3">
+                            <div class="jumbotron jumbotron-fluid mt-4" id="ad_banner">
+                                <div class="container">
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-2" id="lorem_1">
+                    <p>.leiZ med nov retiew nemmok dnU ,etsnüK eleiv nehcus dnU ,etsnipsegtfuL nennips riW ;leiv thcin rag nessiw dnU ,rednüS emra letie dniS redniknehcsneM ezlots riW</p>
+                    <p>!nies hcilhörf dnu mmorf redniK eiW nedrE fua reih rid rov dnU ,nedrew gitläfnie snu ßaL !nuerf snu tiekletiE thciN ,neuart shcilgnägrev sthcin fuA ,neuahcs lieH nied snu ßal ,ttoG</p>
+                    <p>!ttoG remmorf reuert rebeil uD ,nemmok lemmiH ni snu ßaL ,nemmoneg snu ud nnew dnU ,doT netfnas nenie hcruD nemhen snu tleW reseid suA nemärG rednos hcildne tslloW</p>
+                    <p>!hcua rabhcaN neknark nresnu dnU ,nefalhcs gihur snu ßal dnU ,nefartS tim ttoG snu ’nohcsreV .hcuahdnebA red tsi tlaK !redein nemaN settoG nI ,redürB rhi ,nned hcue tgel oS</p>
+                    <h6>suidualC saihttaM</h6>
+                    <h1><strong>deildnebA</strong></h1>
+                </div>
+            </div>
+        </div>
+        <div id="test0">
+            <p id="lorem_1">Recipe of the day (yummy)</p>
+            <ul id="lorem_1">
+                <li>One big Baguette</li>
+                <li>120 g Pink beans</li>
+                <li>20 Big soy beans</li>
+                <li>1 Brussel sprout</li>
+                <li>1 Tbsp. cinnamon</li>
+                <li>75 ml Bean sauce</li>
+            </ul>
+        </div>
+        <div id="test1">
+            <p id="lorem_1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, doloribus. Ab ut officiis laborum, fugiat veniam nesciunt porro, nulla inventore minima debitis necessitatibus vitae reiciendis deserunt eius cupiditate eveniet dolorem.</p>
+        </div>
+        <!-- Survey Part -->
+        <div id="surveyContainer"></div>
+        <!-- Internal JS with survey logic -->
+        <script type="text/javascript" src="survey.js"></script>
     </body>
 </html>

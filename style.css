@@ -1,0 +1,80 @@
+body {
+    background: url(img/psychedelic_img.jpg) repeat 0 0;
+    overflow-y: hidden !important;
+}
+#idk {
+    opacity: 100 !important;
+    top: 200px;
+}
+#test {
+    background-color: red;
+    opacity: 90%;
+}
+#Welcome {
+    position: fixed;
+    top: 30px;
+    left: 600px;
+    min-height: 100px;
+}
+#NyanCat {
+    position: fixed;
+    top: 30px;
+    left: 500px;
+    width: 100px;
+}
+#DogImage {
+    position: fixed;
+    top: 5px;
+    right: 500px;
+    width: 100px;
+}
+#test0 {
+    position: fixed;
+    bottom: 5px;
+    left: 275px;
+    width: 200px;
+}
+#test1 {
+    position:fixed;
+    bottom: 5px;
+    left: 500px;
+    max-width: 450px;
+}
+#text {
+    position: relative;
+    z-index: -1;
+}
+#lorem_1 {
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    color: white;
+}
+#ad_banner {
+    z-index: 10;
+    min-height: 500px;
+    background: url(img/ad.gif) repeat 0 0;
+    background-size: cover;
+}
+#surveyContainer {
+    background-color: white;
+    margin: 0;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border: 3px solid green;
+    max-width: 550px;
+}
+#ImSticky {
+    position: fixed;
+    top: 25px;
+    left: 275px;
+    width: 200px;
+}
+#OtherImage {
+    position: fixed;
+    bottom: 15px;
+    right: 270px;
+    height: 170px;
+}
