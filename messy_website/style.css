@@ -15,7 +15,7 @@ body {
     position: fixed;
     bottom: 15px;
     right: 270px;
-    height: 170px;
+    height: 180px;
 }
 #dogGIF {
     position: fixed;
@@ -35,11 +35,9 @@ body {
     left: 600px;
     min-height: 100px;
 }
-#adBanner {
-    z-index: 100;
-    min-height: 500px;
-    background: url(img/ad.gif) repeat 0 0;
-    background-size: cover;
+#ad {
+    top: 20px;
+    right: 15px;
 }
 
 /* Containers */
