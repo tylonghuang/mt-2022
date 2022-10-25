@@ -1,58 +1,58 @@
+/* Main body with background */
 body {
     background: url(img/psychedelic_img.jpg) repeat 0 0;
     overflow-y: hidden !important;
 }
-#idk {
-    opacity: 100 !important;
-    top: 200px;
-}
-#test {
-    background-color: red;
-    opacity: 90%;
-}
-#Welcome {
+
+/* GIFs */
+#runningGIF {
     position: fixed;
-    top: 30px;
-    left: 600px;
-    min-height: 100px;
+    top: 25px;
+    left: 275px;
+    width: 200px;
 }
-#NyanCat {
+#clockGIF {
     position: fixed;
-    top: 30px;
-    left: 500px;
-    width: 100px;
+    bottom: 15px;
+    right: 270px;
+    height: 170px;
 }
-#DogImage {
+#dogGIF {
     position: fixed;
     top: 5px;
     right: 500px;
     width: 100px;
 }
-#test0 {
+#nyanGIF {
     position: fixed;
-    bottom: 5px;
-    left: 275px;
-    width: 200px;
-}
-#test1 {
-    position:fixed;
-    bottom: 5px;
+    top: 30px;
     left: 500px;
-    max-width: 450px;
+    width: 100px;
 }
-#text {
-    position: relative;
-    z-index: -1;
+#welcomeGIF {
+    position: fixed;
+    top: 30px;
+    left: 600px;
+    min-height: 100px;
 }
-#lorem_1 {
-    font-family: "Comic Sans MS", "Comic Sans", cursive;
-    color: white;
-}
-#ad_banner {
-    z-index: 10;
+#adBanner {
+    z-index: 100;
     min-height: 500px;
     background: url(img/ad.gif) repeat 0 0;
     background-size: cover;
+}
+
+/* Containers */
+#bsContainer {
+    position: absolute;
+    z-index: -1;
+}
+#midContainer {
+    background-color: red;
+    opacity: 90%;
+}
+#listGroupContainer {
+    top: 200px;
 }
 #surveyContainer {
     background-color: white;
@@ -66,15 +66,21 @@ body {
     border: 3px solid green;
     max-width: 550px;
 }
-#ImSticky {
+
+/* Text */
+#memeText {
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    color: white;
+}
+#leftBottomText {
     position: fixed;
-    top: 25px;
+    bottom: 5px;
     left: 275px;
     width: 200px;
 }
-#OtherImage {
-    position: fixed;
-    bottom: 15px;
-    right: 270px;
-    height: 170px;
+#midBottomText {
+    position:fixed;
+    bottom: 5px;
+    left: 500px;
+    max-width: 450px;
 }

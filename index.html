@@ -19,18 +19,19 @@
         <title>Survey Thingy</title>
     </head>
     <body>
-        <!-- GIF Part -->
+        <!-- Added GIFs here -->
         <div>
-            <img id=ImSticky src="./img/running.gif" alt="StickyImage"">
-            <img id=OtherImage src="./img/clock.gif" alt="OtherImage">
-            <img id=DogImage src="./img/dog.gif" alt="DogImage">
-            <img id=NyanCat src="./img/nyan.gif" alt="NyanCat">
-            <img id=Welcome src="./img/welcome.gif" alt="Welcome">
+            <img id=runningGIF src="./img/running.gif" alt="runningGIF">
+            <img id=clockGIF   src="./img/clock.gif"   alt="clockGIF">
+            <img id=dogGIF     src="./img/dog.gif"     alt="dogGIF">
+            <img id=nyanGIF    src="./img/nyan.gif"    alt="nyanGIF">
+            <img id=welcomeGIF src="./img/welcome.gif" alt="welcomeGIF">
         </div>
-        <!-- Container Part -->
-        <div class="container-fluid" id="text">
+        <!-- Bootstrap container 12-grid -->
+        <div class="container-fluid" id="bsContainer">
             <div class="row justify-content-between">
-                <div class="col-2" id="lorem_1">
+                <!-- Left side poem in grid -->
+                <div class="col-2" id="memeText">
                     <h1><strong>Abendlied</strong></h1>
                     <h6>Matthias Claudius</h6>
                     <p>Der Mond ist aufgegangen Die goldnen Sternlein prangen Am Himmel hell und klar: Der Wald steht schwarz und schweiget, Und aus den Wiesen steiget Der weiße Nebel wunderbar.</p>
@@ -38,9 +39,11 @@
                     <p>Seht ihr den Mond dort stehen? Er ist nur halb zu sehen, Und ist doch rund und schön. So sind wohl manche Sachen, Die wir getrost belachen, Weil unsre Augen sie nicht sehn.</p>
                     <p>Wir stolze Menschenkinder Sind eitel arme Sünder, Und wissen gar nicht viel; Wir spinnen Luftgespinste, Und suchen viele Künste, Und kommen weiter von dem Ziel.</p>
                 </div>
-                <div class="col-8 border border-warning" id="test">
+                <!-- Big red middle part -->
+                <div class="col-8 border border-warning" id="midContainer">
                     <div class="row">
-                        <div class="col-3" id="idk">
+                        <!-- Colorful list on the left -->
+                        <div class="col-3" id="listGroupContainer">
                             <div class="list-group">
                                 <a href="#" class="list-group-item list-group-item-action list-group-item-danger active">You cannot click me</a>
                                 <a href="#" class="list-group-item list-group-item-action list-group-item-warning">You have been warned</a>
@@ -50,18 +53,18 @@
                                 <a href="#" class="list-group-item list-group-item-action list-group-item-info active">There's nothing to see</a>
                             </div>
                         </div>
+                        <!-- Random text on top middle -->
                         <div class="col-6">
                             Don't mind me, I'm just some very nice text doing no harm ( ͡° ͜ʖ ͡°)
                         </div>
+                        <!-- Ad banner GIF on the right -->
                         <div class="col-3">
-                            <div class="jumbotron jumbotron-fluid mt-4" id="ad_banner">
-                                <div class="container">
-                                </div>
-                            </div>
+                            <div class="jumbotron jumbotron-fluid mt-4" id="adBanner"></div>
                         </div>
-                      </div>
+                    </div>
                 </div>
-                <div class="col-2" id="lorem_1">
+                <!-- Right side poem in grid -->
+                <div class="col-2" id="memeText">
                     <p>.leiZ med nov retiew nemmok dnU ,etsnüK eleiv nehcus dnU ,etsnipsegtfuL nennips riW ;leiv thcin rag nessiw dnU ,rednüS emra letie dniS redniknehcsneM ezlots riW</p>
                     <p>!nies hcilhörf dnu mmorf redniK eiW nedrE fua reih rid rov dnU ,nedrew gitläfnie snu ßaL !nuerf snu tiekletiE thciN ,neuart shcilgnägrev sthcin fuA ,neuahcs lieH nied snu ßal ,ttoG</p>
                     <p>!ttoG remmorf reuert rebeil uD ,nemmok lemmiH ni snu ßaL ,nemmoneg snu ud nnew dnU ,doT netfnas nenie hcruD nemhen snu tleW reseid suA nemärG rednos hcildne tslloW</p>
@@ -71,9 +74,10 @@
                 </div>
             </div>
         </div>
-        <div id="test0">
-            <p id="lorem_1">Recipe of the day (yummy)</p>
-            <ul id="lorem_1">
+        <!-- Recipe at the left bottom -->
+        <div id="leftBottomText">
+            <p id="memeText">Recipe of the day (yummy)</p>
+            <ul id="memeText">
                 <li>One big Baguette</li>
                 <li>120 g Pink beans</li>
                 <li>20 Big soy beans</li>
@@ -82,8 +86,9 @@
                 <li>75 ml Bean sauce</li>
             </ul>
         </div>
-        <div id="test1">
-            <p id="lorem_1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, doloribus. Ab ut officiis laborum, fugiat veniam nesciunt porro, nulla inventore minima debitis necessitatibus vitae reiciendis deserunt eius cupiditate eveniet dolorem.</p>
+        <!-- Random white text at the mid bottom -->
+        <div id="midBottomText">
+            <p id="memeText">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, doloribus. Ab ut officiis laborum, fugiat veniam nesciunt porro, nulla inventore minima debitis necessitatibus vitae reiciendis deserunt eius cupiditate eveniet dolorem.</p>
         </div>
         <!-- Survey Part -->
         <div id="surveyContainer"></div>
