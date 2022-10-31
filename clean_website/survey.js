@@ -22,7 +22,7 @@ var surveyJSON = {
             ]
             }
         ],
-            "title": "Intro & Privacy Statement",
+            "title": "Privacy Statement",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in purus molestie, rhoncus ante ut, faucibus lacus. Etiam imperdiet nisl dui, vitae elementum mi bibendum sed."
         },
         {
@@ -75,7 +75,7 @@ var surveyJSON = {
 function sendDataToServer(survey, options) {
     options.showDataSaving();
     $.ajax({
-        url: 'https://script.google.com/macros/s/AKfycbw6bo0u1dU5cOYFaRjoMCBV7o2VqNzCGV-uQzetsmW5D0rMHL-jpE5C321OFoj8cRIs/exec',
+        url: 'https://script.google.com/macros/s/AKfycbzr_7Zp_bUCjfczuYWHqcVU0hu-zNY2hAGKS5rQ3IoSxWuKaaQZUkvMhy6J9N5IdGzBMQ/exec',
         type: 'post',
         data: JSON.stringify(survey.data),
         //We need tell web app that we use plain text.

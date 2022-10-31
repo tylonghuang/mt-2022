@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <title>🌱 Nice Welcome Page</title>
+        <!-- CSS that centers content -->
+        <style>
+            .content {
+                position          : absolute;
+                left              : 50%;
+                top               : 50%;
+                -webkit-transform : translate(-50%, -50%);
+                transform         : translate(-50%, -50%);
+                text-align        : justify;
+                text-justify      : inter-word;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <!-- Get a random link -->
+        <script type="text/javascript">
+            var randomlinks = [];
+            randomlinks[0]="https://nice-website-one.netlify.app/";
+            randomlinks[1]="https://nice-website-two.netlify.app/";
+            function randomlink(){
+                window.open(randomlinks[Math.floor(Math.random()*randomlinks.length)],"_self");
+            }
+        </script>
+
+        <div class="content">
+            <h2>Hello and welcome!</h2>
+            <p>
+                Dear participant,<br>
+                Do you have videoconferences these days? If so, we would like to invite you to participate in our study!
+                We specifically target people who regularly use videoconferencing tools (for example, Zoom, Microsoft Teams, Skype). If you feel uncomfortable reporting on your experience, please withhold from participating in this study.
+                The study consists of:
+                <ol>
+                    <li>Content 1</li>
+                    <li>Content 2</li>
+                    <li>Content 3</li>
+                </ol>
+                The completion of the study will require approx. X minutes.
+                You will receive a remuneration form at the end of the questionnaire to be paid for the successful completion of the study. 
+                In case you have any questions, please do not hesitate to contact us at:
+            </p>
+            <ul>
+                <li>Long Hoang Nguyen, long.hoang.nguyen@uni-potsdam.de, University of Potsdam</li>
+                <li>Dr. Olga Abramova, oabramov@uni-potsdam.de, University of Potsdam</li>
+            </ul>
+            <form method="post">
+                <p>
+                    <input type="button" class="btn btn-outline-primary" name="random_btn" value="Click here to start" onclick="randomlink()">
+                </p> 
+            </form>
+        </div>
+    </body>
+</html>
