@@ -3,7 +3,7 @@ Survey.StylesManager.applyTheme("modern");
 
 // Survey logic goes here
 var surveyJSON = {
-    "title": "Online Clutter Experiment",
+    "title": "Online Experiment",
     "description": "Participate at your own fun",
     "pages": [
         {
