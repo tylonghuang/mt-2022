@@ -31,9 +31,17 @@
             var randomlinks = [];
             randomlinks[0]="https://nice-website-one.netlify.app/";
             randomlinks[1]="https://nice-website-two.netlify.app/";
-            function randomlink(){
+            var getRandomLink = function () {
                 window.open(randomlinks[Math.floor(Math.random()*randomlinks.length)],"_self");
-            }
+            };
+            $(document).ready(function(){
+                setTimeout(function(){
+                    $("form").submit(function(){
+                        getRandomLink();
+                        alert('Loading survey...');
+                    });
+                }, 1000);
+            });
         </script>
 
         <div class="content">
@@ -56,10 +64,21 @@
                 <li>Long Hoang Nguyen, long.hoang.nguyen@uni-potsdam.de, University of Potsdam</li>
                 <li>Dr. Olga Abramova, oabramov@uni-potsdam.de, University of Potsdam</li>
             </ul>
-            <form method="post">
-                <p>
-                    <input type="button" class="btn btn-outline-primary" name="random_btn" value="Click here to start" onclick="randomlink()">
-                </p> 
+            <form class="row g-3" method="post">
+                <div class="col-12">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                        <label class="form-check-label" for="invalidCheck">
+                            I have read the privacy statement and agree to have my data processed in the scope of this study.
+                        </label>
+                        <div class="invalid-feedback">
+                            You must agree before participating.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <button class="btn btn-outline-primary mt-2" type="submit">Click here to start</button>
+                </div>
             </form>
         </div>
     </body>
