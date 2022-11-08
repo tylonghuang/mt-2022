@@ -104,7 +104,7 @@ var surveyJSON = {
                 }
             ],
             "title": "Looking for charity",
-            "description": "We plan to partner up with a charity that supports abandoned children in extremely poor regions. For this sake, we want to know how much people actually want to contribute for this good cause in order to find the right charities. Of course, we expect no one to spend any real money right now. This is a solely hypothetical value."
+            "description": "We plan to partner up with a charity that supports abandoned children in extremely poor regions. For this sake, we want to know how much people actually want to contribute for this good cause in order to choose the right charities. Of course, we expect no one to spend any real money right now. This is a solely hypothetical value."
         },
         {
             "name": "page5",
@@ -118,10 +118,25 @@ var surveyJSON = {
                 }
             ],
             "title": "Looking for charity",
-            "description": "We plan to partner up with a charity that supports abandoned children in extremely poor regions. For this sake, we want to know how much people actually want to contribute for this good cause in order to find the right charities. Of course, we expect no one to spend any real money right now. This is a solely hypothetical value."
+            "description": "We plan to partner up with a charity that supports abandoned children in extremely poor regions. For this sake, we want to know how much people actually want to contribute for this good cause in order to choose the right charities. Of course, we expect no one to spend any real money right now. This is a solely hypothetical value."
         },
         {
             "name": "page6",
+            "elements": [
+                {
+                    "type": "boolean",
+                    "name": "choose_smoothie",
+                    "title": "Which voucher would you prefer?",
+                    "isRequired": true,
+                    "labelTrue": "Smoothie",
+                    "labelFalse": "Fast Food"
+                }
+            ],
+            "title": "Looking for charity",
+            "description": "After re-checking the shortlisted charities again, we saw that their merchandise ran out. As a compromise, they would instead offer vouchers for some nice food places they are partnered with. One voucher would be for a local Fast Food Shop in the city. The other would be for a nearby shop that sells Fruity Smoothies."
+        },
+        {
+            "name": "page7",
             "elements": [
                 {
                     "type": "radiogroup",
@@ -150,7 +165,7 @@ var surveyJSON = {
             "description": "Please read this question carefully. To ensure that your responses can be used later, we ask you to answer this question as instructed."
         },
         {
-            "name": "page7",
+            "name": "page8",
             "elements": [
                 {
                 "type": "comment",
@@ -164,7 +179,7 @@ var surveyJSON = {
             "description": "Our product team responsible for ping pong balls is currently facing a drought in ideas for new products. The ping pong ball industry is just too saturated. However, they recently saw that our closest competitor is getting record profits with ping pong lamps. Since we want to stand out, we would like to ask you for some creative ideas."
         },
         {
-            "name": "page8",
+            "name": "page9",
             "elements": [
                 {
                     "type": "rating",
@@ -183,7 +198,7 @@ var surveyJSON = {
             "description": "Thank you for answering all the prior questions. We would like to organize a nice christmas gathering to give something back. As for food, we had Sushi in mind. Now we only need help to decide on which restaurant to choose. The choices are: (1) the 30+ years old family-owned restaurant down the street, and (2) the new Fusion Restaurant that has a more western take with cheese filled Sushi."
         },
         {
-            "name": "page9",
+            "name": "page10",
             "elements": [
                 {
                     "type": "text",
