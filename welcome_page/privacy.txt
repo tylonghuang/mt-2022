@@ -6,7 +6,7 @@ The study aims to learn more about different decision-making and ways of thinkin
 2 - Type of data collected
 Within the scope of the study, we collect your demographic data (e.g., age, gender), information about your decision-making or other opinionated information that could be linked to your ways of thinking and behavior. We do not intend to collect any special categories of personal data.
 
-If you are recruited via Prolific, the remuneration happens via Prolific. No contact details of you will be collected.
+If you are recruited via Prolific, the renumeration happens via Prolific. No contact details of you will be collected.
 
 3 - Study incentives
 You will receive fair compensation for participating in the study in line with German wage regulation, which is 12 Euros per hour brutto.
@@ -50,6 +50,8 @@ The list of real names will be removed by the researchers immediately after paym
 
 Recipients of your data
 Your data will be used by the Chair of Social Media and Society at the University of Potsdam, in particular, by the following researchers: Long Hoang Nguyen (University of Potsdam) and Olga Abramova (University of Potsdam). Furthermore, the payment data (esp., name, account data, purpose and payment amount) of respondents who participated in the survey and were approved for payment will be forwarded to the Dezernat 4 (Division 4/Division of Finance and Procurement) of the University of Potsdam for the purpose of reimbursement. 
+
+Due to the technical implementation of the questionnaire, your data will be processed through Google Servers in an AJAX HTTP-request. Precisely, the data will be transferred from SurveyJS to a Google Sheets document through a custom written Google Apps Script. It is important to note that your data will only be transferred and not be processed by Google.
 
 Your rights
 You have the right to obtain from the controller confirmation as to whether or not your personal data is being processed and, if that is the case, access the personal data and additional information (right of access). You also have the right to obtain from the controller without undue delay the rectification of inac-curate personal data. If the legal requirements of Art. 17 or 18 GDPR are met, you are entitled to the erasure of your personal data or to a restriction of the processing. Please note that restricted processing of the data may not be possible in every instance. You have the right to receive your personal data in a structured, standard, and machine-readable format or to request the transfer to another controller (right to data portability, Art. 20 GDPR). Furthermore, you may object to the processing of your personal data under the conditions set forth in Art. 21 GDPR.
