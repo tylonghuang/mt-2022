@@ -144,7 +144,7 @@ var surveyJSON = {
                 {
                     "type":"expression",
                     "name":"ping_pong_description",
-                    "title":"A product team responsible for ping pong balls is currently facing a drought in ideas for new products. On the next page, within the next 3 minutes, please type as many uses as possible for a ping pong ball. Do not use any help because we are curious about your ideas.",
+                    "title":"A product team responsible for ping pong balls is currently facing a drought in ideas for new products. On the next page, within the next 3 minutes, please type as many alternative uses as possible for a ping pong ball. Do not use any help because we are curious about your ideas.",
                     "hideNumber":true
                 }
             ],
