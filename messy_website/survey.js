@@ -530,13 +530,13 @@ var surveyJSON = {
                             "text":"Definitely messy/cluttered"
                         },
                         {
-                            "value":"Rather more messy than clean",
-                            "text":"Rather more messy/cluttered than clean"
+                            "value":"Rather messy than clean",
+                            "text":"Rather messy/cluttered than clean"
                         },
                         "Neither nor",
                         {
-                            "value":"Rather more clean than messy",
-                            "text":"Rather more clean than messy/cluttered"
+                            "value":"Rather clean than messy",
+                            "text":"Rather clean than messy/cluttered"
                         },
                         "Definitely clean"
                     ]
@@ -559,13 +559,13 @@ var surveyJSON = {
                             "text":"Definitely messy/cluttered"
                         },
                         {
-                            "value":"Rather more messy than clean",
-                            "text":"Rather more messy/cluttered than clean"
+                            "value":"Rather messy than clean",
+                            "text":"Rather messy/cluttered than clean"
                         },
                         "Neither nor",
                         {
-                            "value":"Rather more clean than messy",
-                            "text":"Rather more clean than messy/cluttered"
+                            "value":"Rather clean than messy",
+                            "text":"Rather clean than messy/cluttered"
                         },
                         "Definitely clean"
                     ]
