@@ -236,6 +236,7 @@ var surveyJSON = {
                     "type":"text",
                     "name":"crossword_task",
                     "title":"Write down the words you can find in the puzzle within the next 1 minute.",
+                    "description":"Words are hidden vertically and horizontally.",
                     "hideNumber":true
                 }
             ],
@@ -254,7 +255,7 @@ var surveyJSON = {
                 }
             ],
             "title":"Thank you! Almost done!",
-            "description":"Finally, we would like to ask your impressions of the tasks."
+            "description":"Finally, we would like to know your impressions of the tasks."
         },
         {
             "name":"page17",
