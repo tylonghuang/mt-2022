@@ -6,7 +6,6 @@ var surveyJSON = {
     "title":"Online Survey",
     "logoPosition":"right",
     "completedHtml":"<h4>Thank you for completing the survey. To be renumerated, please use the verification code: <strong>3272E712</strong></h4>",
-    "showPrevButton":false,
     "pages":[
         {
             "name":"page1",
@@ -206,7 +205,7 @@ var surveyJSON = {
                 }
             ],
             "title":"Task 4",
-            "description":"Imagine a situation when the compensation system for participants does not work. Instead of a monetary remuneration, we offer food vouchers upon completion of the study. These vouchers are either for a fast food shop/restaurant or a fruity smoothie shop in your proximity.",
+            "description":"Imagine a situation when the compensation system for participants does not work. Instead of a monetary remuneration, we offer food vouchers upon completion of the study. These vouchers are either for a fast food shop/restaurant or a fruity smoothie shop in your proximity."
         },
         {
             "name":"page14",
@@ -224,24 +223,23 @@ var surveyJSON = {
             "description":"We as an organization plan to partner up with a charity that supports abandoned children in extremely poor regions. For this sake, we would like to know how much people are willing to contribute to choose the right charities."
         },
         {
-            "name": "page15",
-            "elements": [
+            "name":"page15",
+            "elements":[
                 {
-                    "type": "image",
-                    "name": "crossword_image",
-                    "hideNumber": true,
-                    "imageLink": "https://drive.google.com/uc?export=view&id=1i7SUznq2SD_R1uaoK2Lky29t2m4cW-DD",
-                    "imageHeight": 100
+                    "type":"image",
+                    "name":"crossword_image",
+                    "hideNumber":true,
+                    "imageLink":"https://drive.google.com/uc?export=view&id=1i7SUznq2SD_R1uaoK2Lky29t2m4cW-DD",
+                    "imageHeight":100
                 },
                 {
-                    "type": "text",
-                    "name": "crossword_task",
-                    "hideNumber": true,
-                    "title": "Write down the words you can find in the puzzle within the next 1 minute.",
-                    "isRequired": false
+                    "type":"text",
+                    "name":"crossword_task",
+                    "title":"Write down the words you can find in the puzzle within the next 1 minute.",
+                    "hideNumber":true
                 }
             ],
-            "title": "Task 6",
+            "title":"Task 6",
             "maxTimeToFinish":65
         },
         {
@@ -373,32 +371,151 @@ var surveyJSON = {
             "elements":[
                 {
                     "type":"dropdown",
-                    "name":"webpage_appearance",
-                    "title":"How would you define the background or the visual appearance of the webpage on which the questions and tasks were presented to you?",
+                    "name":"distracted_by_info",
+                    "title":"I was often distracted by the excessive amount of information on this webpage.",
                     "hideNumber":true,
                     "isRequired":true,
                     "choices":[
-                        {
-                            "value":"Definitely messy",
-                            "text":"Definitely messy/cluttered"
-                        },
-                        {
-                            "value":"Rather more messy than clean",
-                            "text":"Rather more messy/cluttered than clean"
-                        },
-                        "Neither nor",
-                        {
-                            "value":"Rather more clean than messy",
-                            "text":"Rather more clean than messy/cluttered"
-                        },
-                        "Definitely clean"
+                        "Strongly disagree",
+                        "Rather disagree",
+                        "Neither agree nor disagree",
+                        "Rather agree",
+                        "Strongly agree"
                     ]
                 }
             ],
-            "title":"Your thoughts"
+            "title":"Your thoughts on the webpage",
+            "description":"Please indicate the extent to which you agree or disagree with the following statements."
         },
         {
             "name":"page22",
+            "elements":[
+                {
+                    "type":"dropdown",
+                    "name":"overwhelmed_by_info",
+                    "title":"I find that I am overwhelmed by the amount of information that I process on this webpage.",
+                    "hideNumber":true,
+                    "isRequired":true,
+                    "choices":[
+                        "Strongly disagree",
+                        "Rather disagree",
+                        "Neither agree nor disagree",
+                        "Rather agree",
+                        "Strongly agree"
+                    ]
+                }
+            ],
+            "title":"Your thoughts on the webpage",
+            "description":"Please indicate the extent to which you agree or disagree with the following statements."
+        },
+        {
+            "name":"page23",
+            "elements":[
+                {
+                    "type":"dropdown",
+                    "name":"blue_clothes",
+                    "title":"I like blue clothes.",
+                    "description":"Please answer \"Rather disagree\" to show you read questions attentively.",
+                    "hideNumber":true,
+                    "isRequired":true,
+                    "choices":[
+                        "Strongly disagree",
+                        "Rather disagree",
+                        "Neither agree nor disagree",
+                        "Rather agree",
+                        "Strongly agree"
+                    ]
+                }
+            ],
+            "title":"Your thoughts on the webpage",
+            "description":"Please indicate the extent to which you agree or disagree with the following statements."
+        },
+        {
+            "name":"page24",
+            "elements":[
+                {
+                    "type":"dropdown",
+                    "name":"problems_due_to_tmi",
+                    "title":"I feel some problems with too much information on this webpage.",
+                    "hideNumber":true,
+                    "isRequired":true,
+                    "choices":[
+                        "Strongly disagree",
+                        "Rather disagree",
+                        "Neither agree nor disagree",
+                        "Rather agree",
+                        "Strongly agree"
+                    ]
+                }
+            ],
+            "title":"Your thoughts on the webpage",
+            "description":"Please indicate the extent to which you agree or disagree with the following statements."
+        },
+        {
+            "name":"page25",
+            "elements":[
+                {
+                    "type":"dropdown",
+                    "name":"webpage_is_organized",
+                    "title":"I feel that information on the webpage is organized and well structured.",
+                    "hideNumber":true,
+                    "isRequired":true,
+                    "choices":[
+                        "Strongly disagree",
+                        "Rather disagree",
+                        "Neither agree nor disagree",
+                        "Rather agree",
+                        "Strongly agree"
+                    ]
+                }
+            ],
+            "title":"Your thoughts on the webpage",
+            "description":"Please indicate the extent to which you agree or disagree with the following statements."
+        },
+        {
+            "name":"page26",
+            "elements":[
+                {
+                    "type":"dropdown",
+                    "name":"webpage_is_chaotic",
+                    "title":"This webpage often strikes me as chaotic.",
+                    "hideNumber":true,
+                    "isRequired":true,
+                    "choices":[
+                        "Strongly disagree",
+                        "Rather disagree",
+                        "Neither agree nor disagree",
+                        "Rather agree",
+                        "Strongly agree"
+                    ]
+                }
+            ],
+            "title":"Your thoughts on the webpage",
+            "description":"Please indicate the extent to which you agree or disagree with the following statements."
+        },
+        {
+            "name":"page27",
+            "elements":[
+                {
+                    "type":"dropdown",
+                    "name":"website_in_disarray",
+                    "title":"Information presented on the website is often in disarray.",
+                    "hideNumber":true,
+                    "isRequired":true,
+                    "choices":[
+                        "Strongly disagree",
+                        "Rather disagree",
+                        "Neither agree nor disagree",
+                        "Rather agree",
+                        "Strongly agree"
+                    ]
+                }
+            ],
+            "title":"Your thoughts on the webpage",
+            "description":"Please indicate the extent to which you agree or disagree with the following statements."
+        },
+        {
+            "name":"page28",
             "elements":[
                 {
                     "type":"dropdown",
@@ -427,7 +544,7 @@ var surveyJSON = {
             "title":"Your thoughts"
         },
         {
-            "name":"page23",
+            "name":"page29",
             "elements":[
                 {
                     "type":"dropdown",
@@ -456,7 +573,7 @@ var surveyJSON = {
             "title":"Your thoughts"
         },
         {
-            "name":"page24",
+            "name":"page30",
             "elements":[
                 {
                     "type":"text",
@@ -469,6 +586,7 @@ var surveyJSON = {
             "description":"You have now completed all questionnaires. Now, we reveal the objectives and main hypotheses of the study.We designed the study to test the effects of interacting with messy vs. tidy online environment on decision-making (e.g., creativity, willingness to donate, traditional vs. novel choices, healthy vs. unhealthy food choices). Depending on the experimental condition, you were either assigned to complete the tasks on a messy (colorful, flashy background full of dynamic banners) or on a tidy (white background, no pictures) webpage. If you have further questions or would like to share anything, please use the space below."
         }
     ],
+    "showPrevButton":false,
     "showTimerPanel":"top",
     "showTimerPanelMode":"page"
 };
