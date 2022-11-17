@@ -5,7 +5,7 @@ Survey.StylesManager.applyTheme("modern");
 var surveyJSON = {
     "title":"Online Survey",
     "logoPosition":"right",
-    "completedHtml":"<h4>Thank you for completing the survey. To be renumerated, please use the verification code: <strong>3272E712</strong></h4>",
+    "completedHtml":"<h4>Thank you for completing the survey. To be renumerated, please use the verification code: <strong>C1JGCYN9</strong></h4>",
     "pages":[
         {
             "name":"page1",
