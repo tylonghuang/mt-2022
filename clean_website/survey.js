@@ -49,7 +49,7 @@ var surveyJSON = {
                 {
                     "type":"radiogroup",
                     "name":"gender",
-                    "title":"What gender do you most identify with?",
+                    "title":"With which gender do you identify?",
                     "hideNumber":true,
                     "isRequired":true,
                     "choices":[
@@ -158,6 +158,7 @@ var surveyJSON = {
                     "type":"comment",
                     "name":"ping_pong_answer",
                     "title":"How could we use ping pong balls apart from table tennis?",
+                    "description":"Please use all the 3 minutes dedicated to this task.",
                     "hideNumber":true
                 }
             ],
@@ -183,7 +184,7 @@ var surveyJSON = {
                 {
                     "type":"comment",
                     "name":"words_answer",
-                    "title":"Please enter the words below.",
+                    "title":"Please enter the words below. Make use of the whole minute.",
                     "hideNumber":true
                 }
             ],
@@ -205,7 +206,7 @@ var surveyJSON = {
                 }
             ],
             "title":"Task 4",
-            "description":"Imagine a situation when the compensation system for participants does not work. Instead of a monetary remuneration, we offer food vouchers upon completion of the study. These vouchers are either for a fast food shop/restaurant or a fruity smoothie shop in your proximity."
+            "description":"Imagine a situation where the compensation system for participants does not work. Instead of a monetary remuneration, we offer food vouchers upon completion of the study. These vouchers are either for a fast food shop/restaurant or a fruity smoothie shop in your proximity."
         },
         {
             "name":"page14",
@@ -236,7 +237,7 @@ var surveyJSON = {
                     "type":"text",
                     "name":"crossword_task",
                     "title":"Write down the words you can find in the puzzle within the next 1 minute.",
-                    "description":"Words are hidden vertically and horizontally.",
+                    "description":"Words are hidden vertically and horizontally. Make use of the time given.",
                     "hideNumber":true
                 }
             ],
