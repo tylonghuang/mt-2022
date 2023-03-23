@@ -37,11 +37,11 @@ function handleResponse(e) {
 		var nextRow = sheet.getLastRow()+1; // Get next row
 		var row = [];
 		for (i in headers){
-        //  Get the exact timestamps for when the data was collected
+			//  Get the exact timestamps for when the data was collected
 			if (headers[i] == "datetime"){
 				row.push(new Date());
 			}
-        //  Get the JSON data and insert it into the column raw_data
+			//  Get the JSON data and insert it into the column raw_data
 			else if (headers[i] == "raw_data"){
 				row.push(JSON.stringify(data));
 			}
