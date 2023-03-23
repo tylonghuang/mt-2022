@@ -10,7 +10,7 @@ This repository contains the code of the master thesis from Long Hoang Nguyen. I
 
 ## Software Architecture
 
-Image will be inserted later
+![](/architecture.png "Software Architecture")
 
 ## Repository Content
 
