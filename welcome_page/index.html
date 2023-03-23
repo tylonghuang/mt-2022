@@ -40,10 +40,15 @@
                         getRandomLink();
                         alert('Loading survey...');
                     });
+                /*
+                    We need to set a delay here, since all content will not render properly otherwise
+                    In case you get the alert without the content, you should change the delay below
+                */
                 }, 1000);
             });
         </script>
         <div class="content">
+            <!-- This is just some markup text, nothing special -->
             <h2>Hello and welcome!</h2>
             <p>
                 Dear participant,<br>
@@ -67,6 +72,7 @@
                 <li>Long Hoang Nguyen, long.hoang.nguyen@uni-potsdam.de, University of Potsdam</li>
                 <li>Dr. Olga Abramova, oabramov@uni-potsdam.de, University of Potsdam</li>
             </ul>
+            <!-- Making sure that every participant agrees to our privacy statement before starting the survey -->
             <form class="row g-3" method="post">
                 <div class="col-12">
                     <div class="form-check">
